@@ -10,6 +10,10 @@ def fac(n):
                 break
     return result
 
-n = int(sys.argv[1]) # input a number after the file name
+
+if len(sys.argv) == 1:
+    n = int(input()) # if no input parameter, ask for an input number
+else:
+    n = int(sys.argv[1]) # input a number after the file name
 
 print(fac(n))
