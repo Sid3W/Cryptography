@@ -1,12 +1,13 @@
-def gcd(a,b):
+def GCD(a,b):
     if a == 0:
         return b
     if b == 0:
         return a
     if a >= b:
-        return gcd(a%b, b)
+        return GCD(a%b, b)
     else:
-        return gcd(a, b%a)
+        return GCD(a, b%a)
+
 
 import sys
 if len(sys.argv) == 1:
@@ -16,4 +17,4 @@ else:
     a = int(sys.argv[1])
     b = int(sys.argv[2])
 
-print(gcd(a,b))
+print(GCD(a,b))
