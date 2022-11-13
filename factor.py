@@ -1,3 +1,5 @@
+#暴力 大数分解
+
 import sys
 
 def fac(n):
